@@ -9,12 +9,12 @@
 <body>
     <div class="container">
         <h2>Chhotkari CMS</h2>
-        {% if error_message %}
-            <p>{{ error_message }}</p>
-        {% endif %}
-        <form id="login-form">
-            <form method="post"></form>
-                {% csrf_token %}
+<!--        {% if error_message %}-->
+<!--            <p>{{ error_message }}</p>-->
+<!--        {% endif %}-->
+<!--        <form id="login-form">-->
+        <form method="post">
+            {% csrf_token %}
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>

@@ -14,6 +14,7 @@ urlpatterns = [
     path('login/', views.index, name='index'),
     path('login/home/', views.home, name='home'),
     path('create/', views.create_post, name='create_post'),
-
+    path('news/<int:news_id>/image/', views.get_news_image, name='get_news_image'),
+    path('news/category/<str:category>/', views.get_news_by_category, name='news-by-category'),  # Endpoint to get news by category
               ] + router.urls
 
